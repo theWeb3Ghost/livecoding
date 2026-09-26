@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>JS Practice Lab — Backend Basics</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧪</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="brand-mark">{ }</span>
+        <div class="brand-text">
+          <strong>JS Practice Lab</strong>
+          <span>Backend Basics · Module 1</span>
+        </div>
+      </div>
+
+      <nav class="module-list" id="module-list" aria-label="Exercises"></nav>
+
+      <div class="sidebar-footnote">
+        Write the function. Click Run. Read what your code says back to you.
+      </div>
+    </aside>
+
+    <main class="workspace">
+      <header class="workspace-header">
+        <div>
+          <p class="eyebrow" id="ex-count">Exercise 1 of 5</p>
+          <h1 id="ex-title">Loading…</h1>
+          <p class="ex-tagline" id="ex-tagline"></p>
+        </div>
+        <div class="header-actions">
+          <button class="btn ghost" id="hint-btn" type="button">Show hint</button>
+          <button class="btn ghost" id="reset-btn" type="button">Reset code</button>
+          <button class="btn primary" id="run-btn" type="button">▶ Run code</button>
+        </div>
+      </header>
+
+      <section class="instructions" id="ex-instructions"></section>
+
+      <div class="hint-panel" id="hint-panel" hidden></div>
+
+      <section class="panes">
+        <div class="pane editor-pane">
+          <div class="pane-label">
+            <span>your_code.js</span>
+            <span class="var-counter" id="var-counter"></span>
+          </div>
+          <div class="editor-wrap">
+            <div class="line-numbers" id="line-numbers">1</div>
+            <textarea id="code-editor" spellcheck="false" autocapitalize="off" autocomplete="off"></textarea>
+          </div>
+        </div>
+
+        <div class="pane console-pane">
+          <div class="pane-label">
+            <span>console output</span>
+            <button class="clear-console" id="clear-console" type="button">clear</button>
+          </div>
+          <div class="console-body" id="console-output">
+            <p class="console-placeholder">Click <strong>Run code</strong> to see what your program prints here.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="/exercises.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
