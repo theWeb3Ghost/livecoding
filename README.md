@@ -24,24 +24,3 @@ npm start
 ```
 
 Then open http://localhost:3000
-
-## Deploying on Render
-
-1. Push this folder to a GitHub repository.
-2. On [render.com](https://render.com), click **New +** → **Web Service**.
-3. Connect the repository.
-4. Set:
-   - **Build Command:** `npm install`
-   - **Start Command:** `npm start`
-   - **Environment:** Node
-5. Click **Create Web Service**. Render will build and give you a live URL
-   (something like `https://js-practice-lab.onrender.com`) you can share with
-   your students.
-
-No environment variables or database are required.
-
-## Adding your own exercises
-
-Open `public/exercises.js` — each exercise is one object in the `EXERCISES`
-array with a title, tagline, instructions, a hint, and starter code. Add a
-new object to the array and it will automatically appear in the sidebar.
